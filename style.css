@@ -11,14 +11,27 @@
 
 @font-face{ /* Suisse Mono | Reg S | Captions, Table & Nav */
     font-family:suisseIntl;
-    src: url(../fonts/SuisseIntl-Regular-WebS.woff);
+    src: url(../fonts/SuisseIntl-Regular-WebM.woff);
     font-weight: 100;
 }
+
 
 @font-face{ /* Suisse Mono | Reg | Body Headers */
     font-family:suisseMono;
     src: url(../fonts/SuisseIntlMono-Regular-WebS.woff);
     font-weight:100;
+}
+
+@font-face{ /* Suisse Mono | Bold | Body Headers */
+    font-family:suisseMonoSemi;
+    src: url(../fonts/SuisseIntlCond-Regular-WebS.woff);
+    font-weight:500;
+}
+
+@font-face{ /* Suisse Mono | Bold | Body Headers */
+    font-family:suisseMono;
+    src: url(../fonts/SuisseIntlMono-Bold-WebS.woff);
+    font-weight:300;
 }
 
 @font-face{ /* Suisse Mono | Thin |Body Copy */
@@ -31,6 +44,62 @@
 /* Global Typography */
 
 /* Nav */
+
+button{
+    /* background:blue; */
+    width:20px;
+    display:inline-block;
+    border-radius:5px;
+    height: 40px;
+    stroke: 2px ;
+    opacity: 0%;
+}
+#step1button{
+    position: relative;
+    left: -96px;
+    top: -2px;
+}
+#step2button{
+    position: relative;
+    left: -100px;
+    top: -2px;
+}
+#step3button{
+    position: relative;
+    left: -102px;
+    top: -2px;
+}
+#step4button{
+    position: relative;
+    left: -106px;
+    top: -2px;
+}
+#step5button{
+    position: relative;
+    left: -110px;
+    top: -2px;
+}
+#step6button{
+    position: relative;
+    left: -113px;
+    top: -2px;
+}
+#step7button{
+    position: relative;
+    left: -117px;
+    top: -2px;
+}
+#step8button{
+    position: relative;
+    left: -120px;
+    top: -2px;
+}
+#step9button{
+    position: relative;
+    left: -122px;
+    top: -2px;
+}
+
 
 H1{                 /* Main Title */
     font-family: suisseIntl;
@@ -62,41 +131,55 @@ H2{                 /* Body Title */
 }
 
 .bP{                /* Body Paragraph */
-    font-family: suisseMono;
+    font-family: suisseIntl;
     color: black;
     font-weight: 500;
     font-size: 16pt;
     max-width: 55ch;
-    line-height: 24pt;
+    line-height: 28pt;
     min-width: 50vw;
+    letter-spacing: 0.5px;
+}
+
+.bPEmail{                /* Body Paragraph */
+    font-family: suisseMono;
+    color: black;
+    font-weight: 300;
+    font-size: 10pt;
+    max-width: 55ch;
+    line-height: 17.5pt;
+    min-width: 50vw;
+    letter-spacing: 0.5px;
 }
 
 .bPIndent{          /* Body Paragraph Indent */
-    font-family: suisseMono;
+    font-family: suisseIntl;
     color: black;
     font-weight: 500;
     font-size: 16pt;
     max-width: 55ch;
-    line-height: 24pt;
-    text-indent: 3ch;
+    line-height: 28pt;
     min-width: 50vw;
+    letter-spacing: 0.5px;
+    text-indent: 3ch;
 }
 
 .bPOL{              /* Body Paragraph Ordered List */
-    font-family: suisseMono;
+    font-family: suisseIntl;
     color: black;
     font-weight: 500;
     font-size: 16pt;
-    text-indent: -6pt;
-    line-height: 22pt;
-    
+    max-width: 55ch;
+    line-height: 26pt;
+    min-width: 50vw;
+    letter-spacing: 2px;
 }
 
 .cap{               /* Captions */
     font-family: suisseIntl;
     color: rgb(0, 0, 0);
     font-weight: 100;
-    line-height: 13pt;
+    line-height: 17.5pt;
     font-size: 10pt;
     max-width: 80vw;
     letter-spacing: 0.2ch;
@@ -116,6 +199,14 @@ a:visited{
 }
 a:active{
     color: blue;
+}
+
+#footerLink{
+    color: #000000;
+}
+
+#bodyLink{
+    color: red;
 }
 
 /* Local Typography */
@@ -233,16 +324,16 @@ body {
 .stepsNav {         /* Nav | Top | Steps Button | Container */
     position: absolute;
     top: 0px;
-    right: 0px;
+    right: -50px;
     padding-top: 60px;
-    padding-right: 40px;
+    padding-right: -40px;
     margin-right: 20px;
     height: 40px;
 }
 
 .stepsButtonType{   /* Nav | Top | Steps Button | Type | Container */
     position: relative;
-    top:-100px;
+    top:-109px;
 }
 
 #step1type{         /* Nav | Top | Steps Button | Type | invdidual Number Container */
@@ -318,6 +409,12 @@ body {
     left:58px ;
 }
 
+#step5typePast{         /* Nav | Top | Steps Button | Type | invdidual Number Container */
+    position: relative;
+    left:58px ;
+    opacity: 60%;
+}
+
 #step5typeCurrent{         /* Nav | Top | Steps Button | Type | invdidual Number Container */
     position: relative;
     left:58px ;
@@ -329,9 +426,33 @@ body {
     left:65px ;
 }
 
+#step6typePast{         /* Nav | Top | Steps Button | Type | invdidual Number Container */
+    position: relative;
+    left:65px ;
+    opacity: 60%;
+}
+
+#step6typeCurrent{         /* Nav | Top | Steps Button | Type | invdidual Number Container */
+    position: relative;
+    left:65px ;
+    color: red;
+}
+
 #step7type{         /* Nav | Top | Steps Button | Type | invdidual Number Container */
     position: relative;
     left:73px ;
+}
+
+#step7typePast{         /* Nav | Top | Steps Button | Type | invdidual Number Container */
+    position: relative;
+    left:73px ;
+    opacity: 60%;
+}
+
+#step7typeCurrent{         /* Nav | Top | Steps Button | Type | invdidual Number Container */
+    position: relative;
+    left:73px ;
+    color: red;
 }
 
 #step8type{         /* Nav | Top | Steps Button | Type | invdidual Number Container */
@@ -339,9 +460,33 @@ body {
     left:80px ;
 }
 
+#step8typeCurrent{         /* Nav | Top | Steps Button | Type | invdidual Number Container */
+    position: relative;
+    left:80px ;
+    color: red;
+}
+
+#step8typePast{         /* Nav | Top | Steps Button | Type | invdidual Number Container */
+    position: relative;
+    left:80px ;
+    opacity: 60%;
+}
+
 #step9type{         /* Nav | Top | Steps Button | Type | invdidual Number Container */
     position: relative;
     left:87px ;
+}
+
+#step9typeCurrent{         /* Nav | Top | Steps Button | Type | invdidual Number Container */
+    position: relative;
+    left:87px ;
+    color: red;
+}
+
+#step9typePast{         /* Nav | Top | Steps Button | Type | invdidual Number Container */
+    position: relative;
+    left:87px ;
+    opacity: 60%;
 }
 
 #leftNavType{       /* Nav | Side | Type | Container */
@@ -438,7 +583,26 @@ body {
     margin-bottom: 80px;
     padding-left: 20px;
     padding-right: 20px;
+    max-width: 100%;
+}
+.footerTableContainer{
+    margin-top: 80px;
+    margin-left: 10vw;
+    margin-right: 5vw;
+    margin-bottom: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
     max-width: 80%;
+}
+
+.footer{
+    margin-top: 80px;
+    margin-left: 0vw;
+    margin-right: 5vw;
+    margin-bottom: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 100%;
 }
 
 th, td {            /* Body | Table | container */
@@ -450,6 +614,18 @@ th, td {            /* Body | Table | container */
     color: rgb(0, 0, 0);
     font-weight: 100;
     line-height: 13pt;
+    font-size: 10pt;
+    max-width: 80vw;
+    letter-spacing: 0.2ch;
+    text-align: left;
+    vertical-align: top;
+}
+
+.footerTableHeader{       /* Body | Table | Type | Header */
+    font-family: suisseMonoSemi;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    line-height: 18pt;
     font-size: 10pt;
     max-width: 80vw;
     letter-spacing: 0.2ch;
@@ -496,17 +672,41 @@ tr{                 /* Body | Table | Type | Body Copy */
 /* Images */
 
 #redArrowSticker{
-    height: 60vh;
+    height: 150vh;
     rotate: 4deg;
     opacity: 100;
 
 }
 
-#keepDry{
-    height: 60vh;
+#highClaim{
+    height: 80vh;
     rotate: -4deg;
     opacity: 100;
 
+}
+
+#keepDry{
+    height: 120vh;
+    rotate: 7deg;
+    opacity: 100;
+}
+
+#doNotDoubleStack{
+    height: 120vh;
+    rotate: -7deg;
+    opacity: 100;
+}
+
+#fragileStack{
+    height: 120vh;
+    rotate: -6deg;
+    opacity: 100;
+}
+
+#fourUp{
+    height: 120vh;
+    rotate: 3deg;
+    opacity: 100;
 }
 
 .inlineImage{
@@ -515,6 +715,19 @@ tr{                 /* Body | Table | Type | Body Copy */
     border-radius: 10px;
     mix-blend-mode: multiply;
     margin-bottom: 20px;
+}
+
+/* Video */
+.youtube{
+    width: 103%;
+    height: 500px;
+    margin-top: 40px;
+    /* https://stackoverflow.com/questions/41142232/cross-browser-embedded-video-grayscale-filter */
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
 }
 
 /* Utilities */
@@ -556,6 +769,12 @@ tr{                 /* Body | Table | Type | Body Copy */
 }
 .negKern1{
     letter-spacing: -1px; 
+}
+.posKern1{
+    letter-spacing: 1px; 
+}
+.posKern2{
+    letter-spacing: 2px; 
 }
 .posKern3{
     letter-spacing: 3px; 
