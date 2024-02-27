@@ -1,0 +1,544 @@
+/* Temp Dev Utilities */
+
+
+/* Fonts */
+
+@font-face{ /* Suisse Mono | Reg XL | Main Titles, H1 */
+    font-family:suisseIntl;
+    src: url(../fonts/SuisseIntl-Regular-WebXL.woff);
+    font-weight: Bolder;
+}
+
+@font-face{ /* Suisse Mono | Reg S | Captions, Table & Nav */
+    font-family:suisseIntl;
+    src: url(../fonts/SuisseIntl-Regular-WebS.woff);
+    font-weight: 100;
+}
+
+@font-face{ /* Suisse Mono | Reg | Body Headers */
+    font-family:suisseMono;
+    src: url(../fonts/SuisseIntlMono-Regular-WebS.woff);
+    font-weight:100;
+}
+
+@font-face{ /* Suisse Mono | Thin |Body Copy */
+    font-family:suisseMono;
+    src: url(../fonts/SuisseIntlMono-thin-WebS.woff);
+    font-weight:500;
+}
+
+
+/* Global Typography */
+
+/* Nav */
+
+H1{                 /* Main Title */
+    font-family: suisseIntl;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    font-size: 30vh;
+    line-height: calc(0.8 * 30vh);
+    text-align: center;
+    letter-spacing: 10px;
+}
+
+H2{                 /* Body Title */
+    font-family: suisseMono;
+    color: black;
+    font-weight: 100;
+    font-size: 20pt;
+    line-height: 30pt;
+}
+
+.navType{           /* Nav Type */
+    font-family: suisseIntl;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    font-size: 12pt;
+    text-transform: uppercase;
+    position: relative;
+    top:10px;
+    left: 18px;
+}
+
+.bP{                /* Body Paragraph */
+    font-family: suisseMono;
+    color: black;
+    font-weight: 500;
+    font-size: 16pt;
+    max-width: 55ch;
+    line-height: 24pt;
+    min-width: 50vw;
+}
+
+.bPIndent{          /* Body Paragraph Indent */
+    font-family: suisseMono;
+    color: black;
+    font-weight: 500;
+    font-size: 16pt;
+    max-width: 55ch;
+    line-height: 24pt;
+    text-indent: 3ch;
+    min-width: 50vw;
+}
+
+.bPOL{              /* Body Paragraph Ordered List */
+    font-family: suisseMono;
+    color: black;
+    font-weight: 500;
+    font-size: 16pt;
+    text-indent: -6pt;
+    line-height: 22pt;
+    
+}
+
+.cap{               /* Captions */
+    font-family: suisseIntl;
+    color: rgb(0, 0, 0);
+    font-weight: 100;
+    line-height: 13pt;
+    font-size: 10pt;
+    max-width: 80vw;
+    letter-spacing: 0.2ch;
+
+}
+
+a:link{ 
+    color: #FF0000;
+    text-decoration: none; 
+}
+a:hover{ 
+    color: #00FF00;
+    text-decoration: underline; 
+}
+a:visited{
+    color: #fff200;
+}
+a:active{
+    color: blue;
+}
+
+/* Local Typography */
+
+#step1Title{
+    font-size: 12vh;
+    line-height: calc(1.55 * 12vh); 
+}
+
+#step2Title{
+    font-size: 10vh;
+    line-height: calc(1.75 * 10vh); 
+}
+
+#step4Title{
+    font-size: 10vh;
+    line-height: calc(2.5 * 10vh); 
+}
+
+/* Backers */
+
+#homeBacker{        /* Nav | Top | Home Button | Backer */
+    position: relative;
+    height: 40px;
+    color: #000000;
+}
+
+#stepsBacker{       /* Nav | Top | Steps Button | Backer */
+    position: relative;
+    top: -40px;
+    height: 40px;
+    color: #000000;
+}
+
+.sideNavL {         /* Nav | Side | Container */
+    position: sticky;
+    top: 50%;
+    margin-top: 500px;
+    padding-left: 40px;
+    width: 100px;
+    height: 40px;
+}
+
+.sideNavR {         /* Nav | Side | Container */
+    position: sticky;
+    top: 50%;
+    margin-top: -40px;
+    margin-right: 40px;
+    left: calc(100vw);
+    width: 40px;
+    height: 40px;
+}
+
+.sideNavCircle1 {   /* Nav | Side |  */
+    position: absolute;
+    top: 50%;
+    height: 40px;
+    width: 40px;
+    background-color: #000000;
+    border-radius: 50%;
+}
+
+.sideNavCircle2 {   /* Nav | Side |  */
+    position: absolute;
+    top: 50%;
+    left: calc(100%);
+    height: 40px;
+    width: 40px;
+    background-color: #000000;
+    border-radius: 50%;
+}
+
+/* Containers */
+
+body {
+    background-color: rgb(228, 228, 228);
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    margin-right: 40px;
+}
+
+/* Nav */
+
+.navBar{            /* Nav | Top | Container */
+    position: sticky;
+    top: 20px;
+    width: 100vw;
+    margin-top: 40vh;
+    z-index: 10;
+}
+
+.navBuffer {        /* Nav | Top | Container for sticky*/
+    width: 50vw;
+    height: calc(50vh - 20px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+/* Home Button */
+
+.homeButton {       /* Nav | Top | Home Button | Container */
+    padding-top: 20px;
+    padding-left: 40px;
+}
+
+.homeButtonType{    /* Nav | Top | Home Button | Type | Container */
+    position: relative;
+    top:-60px;
+    left:-4px
+}
+
+/* Steps Button */
+
+.stepsNav {         /* Nav | Top | Steps Button | Container */
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding-top: 60px;
+    padding-right: 40px;
+    margin-right: 20px;
+    height: 40px;
+}
+
+.stepsButtonType{   /* Nav | Top | Steps Button | Type | Container */
+    position: relative;
+    top:-100px;
+}
+
+#step1type{         /* Nav | Top | Steps Button | Type | invdidual Number Container */
+    position: relative;
+    left: 30px;
+}
+
+#step1typeCurrent{  /* Nav | Top | Steps Button | Type | invdidual Number Container */
+    position: relative;
+    left: 30px;
+    color:#ed1c24;
+}
+
+#step1typePast{     /* Nav | Top | Steps Button | Type | invdidual Number Container */
+    position: relative;
+    left: 30px;
+    opacity: 60%;
+}
+
+#step2type{         /* Nav | Top | Steps Button | Type | invdidual Number Container */
+    position: relative;
+    left: 39px ;
+}
+
+#step2typeCurrent{  /* Nav | Top | Steps Button | Type | invdidual Number Container | current */
+    position: relative;
+    left: 39px ;
+    color:#fff200
+}
+
+#step2typePast{     /* Nav | Top | Steps Button | Type | invdidual Number Container */
+    position: relative;
+    left: 39px ;
+    opacity: 60%;
+}
+
+#step3type{         /* Nav | Top | Steps Button | Type | invdidual Number Container */
+    position: relative;
+    left:46px ;
+}
+
+#step3typePast{         /* Nav | Top | Steps Button | Type | invdidual Number Container */
+    position: relative;
+    left:46px ;
+    opacity: 60%;
+}
+
+#step4type{         /* Nav | Top | Steps Button | Type | invdidual Number Container */
+    position: relative;
+    left:52px ;
+}
+
+#step5type{         /* Nav | Top | Steps Button | Type | invdidual Number Container */
+    position: relative;
+    left:58px ;
+}
+
+#step6type{         /* Nav | Top | Steps Button | Type | invdidual Number Container */
+    position: relative;
+    left:65px ;
+}
+
+#step7type{         /* Nav | Top | Steps Button | Type | invdidual Number Container */
+    position: relative;
+    left:73px ;
+}
+
+#step8type{         /* Nav | Top | Steps Button | Type | invdidual Number Container */
+    position: relative;
+    left:80px ;
+}
+
+#step9type{         /* Nav | Top | Steps Button | Type | invdidual Number Container */
+    position: relative;
+    left:87px ;
+}
+
+#leftNavType{       /* Nav | Side | Type | Container */
+    position: absolute;
+    top:calc(50% - 8px);
+    left: 54px;
+    z-index: +100;                    
+}
+
+#rightNavType{      /* Nav | Side | Type | Container */
+    position: absolute;
+    top: calc(50% - 8px);
+    left:calc(100% + 13px);
+    z-index: +100;                  
+}
+
+/* Main Title */
+
+.mainTitle {        /* Main Title | Type | Container */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 90vw;
+    margin-right: -50%; 
+}
+
+.heroImage {        /* Main Title | Image | Container */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -100; 
+    margin-right: -50%;
+}
+
+#introStep {        /* Main Title | Intro Step | Container */
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translate(-50%);
+    height: 40px;
+    margin-right: -50%;
+}
+
+.introStepType{     /* Main Title | Intro Step | Type | Container */
+    position: absolute;
+    top: 25px;
+    left:calc(50% - 20px);
+    margin-right: -50%;
+    transform: translate(-50%);
+  
+}
+
+/* Body */
+
+.firstBodyContent {      /* Body | Container | Includes adj for Hero Section */
+   
+    margin-left: 10vw;
+    margin-right: 10vw;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.firstRule {      
+    margin-top: -40vh;
+    margin-left: -10vw;
+    width: 120vw;
+}
+
+.fullBleedRule {      
+    margin-left: -10vw;
+    width: 120vw;
+}
+
+.bodyContent {      /* Body | Container */
+    margin-left: 10vw;
+    margin-right: 10vw;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.tableTitleContainer{
+    margin-left: 10vw;
+    margin-right: 10vw;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.tableContainer{
+    margin-top: 80px;
+    margin-left: 10vw;
+    margin-right: 5vw;
+    margin-bottom: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 80%;
+}
+
+th, td {            /* Body | Table | container */
+    padding: 15px;
+  }
+
+.tableHeader{       /* Body | Table | Type | Header */
+    font-family: suisseIntl;
+    color: rgb(0, 0, 0);
+    font-weight: 100;
+    line-height: 13pt;
+    font-size: 10pt;
+    max-width: 80vw;
+    letter-spacing: 0.2ch;
+    text-align: left;
+    vertical-align: top;
+}
+
+tr{                 /* Body | Table | Type | Body Copy */
+    font-family: suisseIntl;
+    color: rgb(0, 0, 0);
+    font-weight: 100;
+    line-height: 13pt;
+    font-size: 10pt;
+    max-width: 80vw;
+    letter-spacing: 0.2ch;
+    text-align: left;
+    vertical-align: top;
+}
+
+.tableCaption{      /* Body | Table | Type | Caption */
+    font-family: suisseintl;
+    color: rgb(0, 0, 0);
+    font-weight: 100;
+    line-height: 11pt;
+    font-size: 8pt;
+    max-width: 80vw;
+    letter-spacing: 0.2ch;
+    text-align: left;
+    vertical-align: top;
+}
+
+.tableCaptionOl{    /* Body | Table | Type | Caption List */
+    font-family: suisseintl;
+    color: rgb(0, 0, 0);
+    font-weight: 100;
+    line-height: 11pt;
+    font-size: 8pt;
+    max-width: 80vw;
+    letter-spacing: 0.2ch;
+    text-align: left;
+    vertical-align: top;
+}
+
+/* Images */
+
+#redArrowSticker{
+    height: 60vh;
+    rotate: 4deg;
+    opacity: 100;
+
+}
+
+#keepDry{
+    height: 60vh;
+    rotate: -4deg;
+    opacity: 100;
+
+}
+
+.inlineImage{
+    margin-top: 40px;
+    width: calc(80vw - 110px);
+    border-radius: 10px;
+    mix-blend-mode: multiply;
+    margin-bottom: 20px;
+}
+
+/* Utilities */
+.negKern15{
+    letter-spacing: -15px; 
+}
+.negKern12{
+    letter-spacing: -12px; 
+}
+.negKern11{
+    letter-spacing: -11px; 
+}
+.negKern10{
+    letter-spacing: -10px; 
+}
+.negKern9{
+    letter-spacing: calc(0.025 * -25vh); 
+}
+.negKern7{
+    letter-spacing: -8px; 
+}
+.negKern7{
+    letter-spacing: -7px; 
+}
+.negKern6{
+    letter-spacing: -6px; 
+}
+.negKern5{
+    letter-spacing: -5px; 
+}
+.negKern4{
+    letter-spacing: -4px; 
+}
+.negKern3{
+    letter-spacing: -3px; 
+}
+.negKern2{
+    letter-spacing: -2px; 
+}
+.negKern1{
+    letter-spacing: -1px; 
+}
+.posKern3{
+    letter-spacing: 3px; 
+}
+.posKern5{
+    letter-spacing: 5px; 
+}
+.posKern10{
+    letter-spacing: 5px; 
+}
