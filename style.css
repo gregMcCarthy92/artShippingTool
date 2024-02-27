@@ -295,6 +295,12 @@ body {
     left:52px ;
 }
 
+#step4typePast{         /* Nav | Top | Steps Button | Type | invdidual Number Container */
+    position: relative;
+    left:52px ;
+    opacity: 60%;
+}
+
 #step5type{         /* Nav | Top | Steps Button | Type | invdidual Number Container */
     position: relative;
     left:58px ;
