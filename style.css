@@ -270,7 +270,7 @@ body {
 #step2typeCurrent{  /* Nav | Top | Steps Button | Type | invdidual Number Container | current */
     position: relative;
     left: 39px ;
-    color:#fff200
+    color:red;
 }
 
 #step2typePast{     /* Nav | Top | Steps Button | Type | invdidual Number Container */
@@ -290,6 +290,12 @@ body {
     opacity: 60%;
 }
 
+#step3typeCurrent{         /* Nav | Top | Steps Button | Type | invdidual Number Container */
+    position: relative;
+    left:46px ;
+    color: rgb(255, 0, 0);
+}
+
 #step4type{         /* Nav | Top | Steps Button | Type | invdidual Number Container */
     position: relative;
     left:52px ;
@@ -301,9 +307,21 @@ body {
     opacity: 60%;
 }
 
+#step4typeCurrent{         /* Nav | Top | Steps Button | Type | invdidual Number Container */
+    position: relative;
+    left:52px ;
+    color: red;
+}
+
 #step5type{         /* Nav | Top | Steps Button | Type | invdidual Number Container */
     position: relative;
     left:58px ;
+}
+
+#step5typeCurrent{         /* Nav | Top | Steps Button | Type | invdidual Number Container */
+    position: relative;
+    left:58px ;
+    color: #FF0000;
 }
 
 #step6type{         /* Nav | Top | Steps Button | Type | invdidual Number Container */
