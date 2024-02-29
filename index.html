@@ -5,7 +5,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>firstSteps</title>
+        <title>Home</title>
         <meta name="index" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
@@ -13,11 +13,11 @@
 
     <body>
         
-        <!-- Nav -->
+      <!-- Nav -->
 
 
             <!-- Buffer for sticky -->
-            <div class="navBuffer"></div>
+            <div class="navBufferHomePage"></div>
             <!--  -->
 
 
@@ -25,17 +25,18 @@
             <div class="navBar">
                 <!-- Home Button -->
                 <div class="homeButton">
-                    <img id="homeBacker"src ="../images/navBar_homeBacker.svg">
+                    <img id="homeBacker" style="opacity: 0%" src="../images/navBar_homeBacker.svg">
                     <div class="homeButtonType">
-                        <p class="navType">Here > There > Here</p>
+                        <a href="index.html"><p class="navTypeInv"><mark id="homeButtonMark">&nbsp; Here > There > Here&nbsp;</mark></p></a>
                     </div>                    
-                </div>           
+                </div>
+                <!-- Steps            -->
                 <div class="stepsNav">
                     <img id="stepsBacker"src ="../images/navBar_stepsBacker.svg">
                     <div class="stepsButtonType">
-                        <p class="navType">Step
-                            <span class="navStepSpacer" id="step1type"><a href="01-firstSteps.html">1</a></span>
-                            <span class="navStepSpacer" id="step2type"><a href="02-gettingPacked.html">2</a></span>
+                        <p class="navType"><a href="02-gettingPacked.html">Step</a></span>
+                            <span class="navStepSpacer" id="step1typeCurrent">1</span>
+                            <span class="navStepSpacer" id="step2type">2</span>
                             <span class="navStepSpacer" id="step3type">3</span>
                             <span class="navStepSpacer" id="step4type">4</span>
                             <span class="navStepSpacer" id="step5type">5</span>
@@ -43,6 +44,16 @@
                             <span class="navStepSpacer" id="step7type">7</span>
                             <span class="navStepSpacer" id="step8type">8</span>
                             <span class="navStepSpacer" id="step9type">9</span>
+                            
+                            <a href="01-firstSteps.html"><button class="circle-button" id="step1button">1</button></a>
+                            <a href="02-gettingPacked.html"><button class="circle-button" id="step2button">2</button></a>
+                            <a href="03-makingContact.html"><button class="circle-button" id="step3button">3</button></a>
+                            <a href="04-packingArt.html"><button class="circle-button" id="step4button">4</button></a>
+                            <a href="05-shippingMethod.html"><button class="circle-button" id="step5button">5</button></a>
+                            <a href="06-artShippers.html"><button class="circle-button" id="step6button">6</button></a>
+                            <a href="07-folowUp.html"><button class="circle-button" id="step7button">7</button></a>
+                            <a href="08-itGotThere.html"><button class="circle-button" id="step8button">8</button></a>
+                            <a href="09-youreDone.html"><button class="circle-button" id="step9button">9</button></a>
                         </p>
                     </div>
                 </div>         
@@ -54,8 +65,8 @@
                 <div class="sideNavL">
                     <div class="sideNavLButton">
                         <span class="sideNavCircle1"></span>
-                        <p class="navType" id="leftNavType">1</p>
-                    </div>
+                        <p class="navType" id="leftNavType"><a href="09-youreDone.html">←</a></p>
+                    </div> 
                 </div>
                 <!--  -->
 
@@ -63,7 +74,7 @@
                 <div class="sideNavR">
                     <div class="sideNavRButton">
                         <span class="sideNavCircle2"></span>
-                        <p class="navType" id="rightNavType">2</p>
+                        <p class="navType" id="rightNavType"><a href="02-gettingPacked.html">→</a></p>
                     </div>
                 </div>
                 <!--  -->
@@ -73,153 +84,126 @@
 
         <!-- Title Section -->
 
+        <!--Background image  -->
+        <div class="heroImage">
+            <img id="keepDry"src ="../images/3up_FragileSticker.svg">
+        </div>
+        <!--  -->
 
-            <!--Background image  -->
-            <div class="heroImage">
-                <img id="redArrowSticker"src ="../images/redArrowSticker.svg">
-            </div>
-            <!--  -->
-
-            <!-- Intro step -->
-            <img id="introStep" src ="../images/navBar_homeBacker.svg">
-            <div class="introStepType">
-                <p class="navType">Step 1</p>
+        <div class="homeTitleDiv">
+            <!-- Making  -->
+            <h1 id="homeTitle">
+                Here ><br>
+                 There <br>
+                > Here
+            </h1>
+        </div>
+            <div id="homePageSubtitle">
+                <p class="bPCentre "><mark id = h2Test>&nbsp;A step by step guide on how to ship art.</mark></p>
             </div> 
             
 
             <!--     -->
                         
             <!-- Main Title -->
-            <div class="mainTitle">
-                <!-- First  -->
-                <h1>
-                    <span class="negKern1">F</span><span class="negKern9">i</span><span class="posKern3">r</span><span class="negKern3">s</span><span class="negKern15">t</span>
-                <br> 
-                <!-- Steps  -->
-                    <span class="negKern3">S</span><span class="negKern2">t</span><span class="negKern4">e</span><span class="negKern2">ps</span>
-                </h1>
-            </div>
+
             <!--  -->
         <!--  -->
-     
+        <div id="fragileScroll">
+            <h3 id="scrollText1"><mark id="tapeMark">HANDLE WITH CARE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FRAGILE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HANDLE WITH CARE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FRAGILE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HANDLE WITH CARE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FRAGILE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HANDLE WITH CARE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FRAGILE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HANDLE WITH CARE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FRAGILE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HANDLE WITH CARE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FRAGILE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HANDLE WITH CARE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FRAGILE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HANDLE WITH CARE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FRAGILE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HANDLE WITH CARE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FRAGILE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HANDLE WITH CARE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FRAGILE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HANDLE WITH CARE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FRAGILE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HANDLE WITH CARE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</mark></h1>
+            <h3 id="scrollText2"><mark id="tapeMark">&nbsp;&nbsp;&nbsp;HANDLE WITH CARE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FRAGILE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HANDLE WITH CARE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FRAGILE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HANDLE WITH CARE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FRAGILE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HANDLE WITH CARE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FRAGILE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HANDLE WITH CARE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FRAGILE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HANDLE WITH CARE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FRAGILE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HANDLE WITH CARE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FRAGILE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HANDLE WITH CARE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FRAGILE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HANDLE WITH CARE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FRAGILE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HANDLE WITH CARE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FRAGILE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HANDLE WITH CARE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FRAGILE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HANDLE WITH CARE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1></mark>
+            <h3 id="scrollText3"><mark id="tapeMark">FRAGILE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HANDLE WITH CARE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FRAGILE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HANDLE WITH CARE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FRAGILE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HANDLE WITH CARE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FRAGILE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HANDLE WITH CARE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FRAGILE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HANDLE WITH CARE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FRAGILE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HANDLE WITH CARE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FRAGILE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HANDLE WITH CARE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FRAGILE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HANDLE WITH CARE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FRAGILE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HANDLE WITH CARE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FRAGILE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HANDLE WITH CARE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FRAGILE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HANDLE WITH CARE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FRAGILE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HANDLE WITH CARE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1></mark>
+            <h3 id="scrollText4"><mark id="tapeMark">LE WITH CARE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FRAGILE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HANDLE WITH CARE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FRAGILE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HANDLE WITH CARE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FRAGILE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HANDLE WITH CARE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FRAGILE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HANDLE WITH CARE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FRAGILE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HANDLE WITH CARE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FRAGILE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HANDLE WITH CARE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FRAGILE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HANDLE WITH CARE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FRAGILE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HANDLE WITH CARE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FRAGILE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HANDLE WITH CARE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FRAGILE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HANDLE WITH CARE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FRAGILE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HANDLE WITH CARE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1></h1></mark>
+        
+    </div>
 
-        <!-- Article Section -->
+        <div class ="firstRuleAfterScroll"> <!--Full Bleed Rule | Includes ADJ for hero section -->
+            <hr>
+            <hr>
+        </div>
+       
             <div class =bodyContent>
                 <!-- Body Text Section | How to Package... -->
-                    <div class id="bodyTextSection">
-
-                        <hr><br>
-                        <!-- title -->
-                        <h2>| Step 1-1 |<br>| How to Package Your work |</h2><br><hr><br> 
-
-                        <!-- body copy -->
-                        <p class="bP">
-                            Congratulations! You’ve just secured your first show outside of your home city. Great job! The only problem is now that you’ve created whatever it is that will undoubtedly change the future of the art world, you now have to get it to the gallery in one piece, and on time... and professionally enough that they might actually want to work with you again. 
-                        </p>
-                        
-                        <p class="bPIndent">
-                            Who knows if the show goes well you might even get represented by them, and you can quit that second job that pays for your studio. Right? Yup, you’re about to add “Toronto / New York based artist” to that bio on your website. Watch out world This is what all the time in the studio has been for! But wait, shit. I don’t think those paintings will fit in your friend’s Kia Rio and I don’t think blue-chip artists wrap their paintings up in bedsheets… I think you might need help with this.
-                        </p>
-        
-                <!-- Body image Section | Artist Mini Van -->
-                <br><hr>    
-                <div class="bodyImageSection">
-                        <!-- image -->
-                        <img class ="inlineImage" id="artistMiniVan"  src="../images/GPT_artistMiniVan.bmp" alt="Artist trying to get a painiting into a minivan that is too small for the painting they are trying to get into it.">
-
-                        <!-- Image caption -->
-                        <p class="cap">
-                            This is how chat GPT imagines the process. We see the artist trying to put a painting that “doesn’t look that big” into a Dodge Caravan. These vehicles are widely believed to fit all objects made by humankind. We will be working over the next several steps to dispel these illusions.
-                        </p>
-                        <br>
-                        <hr>
-                        <br>
-                    </div>
-                <!--  -->
-
-                <!-- Body Text Section | How to Package cont... -->
-                    <div class id="bodyTextSection">
-
-                        <!-- body copy -->
-                        <p class="bPIndent">
-                            Rest assured, you’re not the first one to come across this. Countless people before you have had this problem. They’ve graduated with a BFA or an MFA and have been educated to the nines about how to create interesting and thought-provoking art, but are struggling with the fact they have never been prepared for the fact that like it or not, their anticapitalist musings on the history of photography and culture, are about to run up against the cruel world of running a small business. This is fine, but We’ll have to prepare you to deal with this absolute bummer of a reality.
-                        </p><br><hr><br><br>
-                    </div>
-                <!--  -->
-
-                <!-- Body Text Section | How to Package... -->
                 <div class id="bodyTextSection">
-
-                    <!-- title -->
-                    
-                        <h2>| 1-2 |<br>
-                        | The Plan | </h2><br><br> 
-                    <hr><br>  
-                    <!--  -->
-
-                    <!-- body copy -->
-                        <p class="bP">
-                            This site is going to work like a bit of crash course for you in how to get through this. You’ve got enough on your mind, and if this can help out a bit and get you back to the things that you actually got into art for, that is all the better. 
-                            </p>
-                        <p class="bPIndent">
-                            We’re going to cover nine basic steps from the beginning to the end to ensure you’re going to be okay — the best we’re going to promise is okay. 
-                        </p>
-                        <ol class="bPOL">
-                            <li>How to Pack</li>
-                            <li>Gallery Contact</li>
-                            <li>Packing the Art</li>
-                            <li>Choosing a Shipping Method</li>
-                            <li>Contacting an Art Shipper</li>
-                            <li>Gallery Followup</li>
-                            <li>Receiving the Artwork</li>
-                        </ol>
-                        <p class= "bPIndent">
-                            Along the way we’re going to meet 3 people. The art handlers, the art shippers, and the receiver of the artwork. I’ve prepared some images of what an AI thinks they all look like.
-                            <br>
-                        </p>
-                        <br>
-                    <!--  -->
-                    
-                   
-                    <!-- Body image Section | The Reciever -->
-                    <hr><br><h2>| The Reciever | </h2><br><hr><br> 
-                    <div class="bodyImageSection">
-                        <!-- image -->
-                        <img class ="inlineImage" id="artistMiniVan"  src="../images/GPT_bigCrate.bmp" alt="A really big crate not fitting into a gallery with a sprinter van prked outside. 2 men look at the crate with confused and working-like poses.">
-
-                        <!-- Image caption -->
-                        <p class="bP">
-                            The receiver of the artwork is generally the most excited and confused person about the process. They are usually the gallery or a collector and are glad to see your art arrive. Universities are often a little more jaded and will bring forth mountains of paperwork to be signed. This should be expected.
-                        </p>
-                        <br>
-                    </div>
-
-                    <!-- Body image Section | The Art Handler -->
-                    <hr><br><h2>| The Art Handler |</h2><br><hr><br>
-                    <div class="bodyImageSection">
-                        <!-- image -->
-                        <img class ="inlineImage" id="artistMiniVan"  src="../images/GPT_artHandlerChicken_16-9.bmp" alt="An art handler in overalls wrapping a scuplture of a chicken that is smoking a cigarette up in bubble wrap. The art handler looks like a hipster doofus with a man bun.">
-
-                        <!-- Image caption -->
-                        <p class="bP">
-                            The receiver of the artwork is generally the most excited and confused person about the process. They are usually the gallery or a collector and are glad to see your art arrive. Universities are often a little more jaded and will bring forth mountains of paperwork to be signed. This should be expected.
-                        </p>
-                        <br>
-                    </div>
-
-                    <!-- Body image Section | The Shipper -->
-                    <hr><br><h2>| The Shipper |</h2><br><hr><br>
-                    <div class="bodyImageSection">
-                        <!-- image -->
-                        <img class ="inlineImage" id="artistMiniVan"  src="../images/GPT_artShipper4.bmp" alt="An art handler in overalls wrapping a scuplture of a chicken that is smoking a cigarette up in bubble wrap. The art handler looks like a hipster doofus with a man bun.">
-
-                        <!-- Image caption -->
-                        <p class="bP">
-                            The receiver of the artwork is generally the most excited and confused person about the process. They are usually the gallery or a collector and are glad to see your art arrive. Universities are often a little more jaded and will bring forth mountains of paperwork to be signed. This should be expected.
-                        </p>
-                        <br>
-                    </div>
+                    <br><h2 id="step1-1"><mark id="h2Test">| Step 1-1 |</mark><br><mark id="h2Test">| How to Package Your Work |</mark></h2><br> 
                 </div>
+            </div>
+
+            <div class="fullBleedRule"> <!--Full Bleed Rule  -->
+                <hr>
+            </div>
+
+            <div class ="bodyContent">
+               <br>
+                <p class="bP">
+                    Welcome, the first step is admitting you have problem. Thats what this website is here for. This sit ewill give you an easy 9 step plan to make sure that you can deal with whatever comes your way when you go to ship your art. The plan is as follows:
+                </p>
+                <ul class="bPUL">
+                    <li><a href="01-firstSteps.html" id="bodyLinkBlack"><mark id="h2TestWhite">&nbsp| Step 1 | First Steps |&nbsp</mark></a></li>
+                    <li><a href="02-gettingPacked.html" id="bodyLinkBlack"><mark id="h2TestWhite">&nbsp| Step 2 | Getting Packed |&nbsp</mark></a></li>
+                    <li><a href="03-makingContact.html" id="bodyLinkBlack"><mark id="h2TestWhite">&nbsp| Step 3 | Making Contact |&nbsp</mark></a></li>
+                    <li><a href="04-packingArt.html" id="bodyLinkBlack"><mark id="h2TestWhite">&nbsp| Step 4 | Packing Art |&nbsp</mark></a></li>
+                    <li><a href="05-shippingMethod.html" id="bodyLinkBlack"><mark id="h2TestWhite">&nbsp| Step 5 | Shipping Methods |&nbsp</mark></a></li>
+                    <li><a href="06-artShippers.html" id="bodyLinkBlack"><mark id="h2TestWhite">&nbsp| Step 6 | Art Shippers |&nbsp</mark></a></li>
+                    <li><a href="07-folowUp.html" id="bodyLinkBlack"><mark id="h2TestWhite">&nbsp| Step 7 | Follow Up |&nbsp</mark></a></li>
+                    <li><a href="08-itGotThere.html" id="bodyLinkBlack"><mark id="h2TestWhite">&nbsp| Step 8 | It Got There! |&nbsp</mark></a></li>
+                    <li><a href="09-youreDone.html" id="bodyLinkBlack"><mark id="h2TestWhite">&nbsp| Step 9 | You're Done |&nbsp</mark></a></li>
+                </ul>
+                <p class="bPIndent">
+                    See, it looks very simple when it is all listed out. 
+                </p>
+
+            <!-- Footer -->
+            <br><br><br><br><br><br>
+            <div class="fullBleedRule"> <!--Full Bleed Rule  -->
+                <hr>
+            </div>
+            
+            <div class="footerTableContainer">
+                <table class="footer" style="width:100%"> <!-- "A Handy Table" -->
+                    <!-- Headers -->
+                    <tr class="footerTableHeader">
+                        <th style="width:15%">Steps</th>
+                        <th style="width:35%">Tasks</th>
+                        <th style="width:50%">Resources</th>
+                    </tr>
+                    <tr class="footerTableHeader">
+                        <td> 
+                            <a href="01-firstSteps.html" id="footerLink">Step 1</a><br>
+                            <a href="02-gettingPacked.html" id="footerLink">Step 2</a><br>
+                            <a href="03-makingContact.html" id="footerLink">Step 3</a><br>
+                            <a href="04-packingArt.html" id="footerLink">Step 4</a><br>
+                            <a href="05-shippingMethod.html" id="footerLink">Step 5</a><br>
+                            <a href="06-artShippers.html" id="footerLink">Step 6</a><br>
+                            <a href="07-folowUp.html" id="footerLink">Step 7</a><br>
+                            <a href="08-itGotThere.html" id="footerLink">Step 8</a><br>
+                            <a href="09-youreDone.html" id="footerLink">Step 9</a><br>
+                        </td>
+                        <td>
+                            <a href="01-firstSteps.html#step1-1" id="footerLink">1-1 | How to Package Your Work</a><br>
+                            <a href="01-firstSteps.html#step1-2" id="footerLink">1-2 | The Plan</a><br>
+                            <a href="02-gettingPacked.html#step2-1" id="footerLink">2-1 | How to Package Your work</a><br>
+                            <a href="02-gettingPacked.html#step2-2" id="footerLink">2-2 | A Handy Table</a><br>
+                            <a href="02-gettingPacked.html#step2-3" id="footerLink">2-3 | Supplies</a><br>
+                            <a href="03-makingContact.html#step3-1" id="footerLink">3-1 | Emailing</a><br>
+                            <a href="04-packingArt.html#step4-1" id="footerLink">4-1 | Packing Art</a></br>
+                        </td>
+                        <td>
+                            <a href="https://www.canada.ca/en/conservation-institute/services/conservation-preservation-publications/canadian-conservation-institute-notes/wrapping-painting.html" id="footerLink" target="_blank">How the Government Thinks You Should Package Your Art</a><br>
+                            <a href="03-makingContact.html#step3-1" id="footerLink">An Example of How to Not Make Galleries Hate You<br></a>
+                            <a href="https://books.google.ws/books?id=shantZ75PVgC&printsec=frontcover#v=onepage&q&f=false" id="footerLink" target="_blank">The Bible<br></a>
+                            <a href="https://refuseuline.com/" id="footerLink" target="_blank">Why Uline is Evil<br></a>
+                            A List of Supplies<br>
+                            A Handy Table<br>
+                            
+                        </td>
+                    </tr>
+                </table>
+                <br><br><br>
+            </div>
+            
+            <div class="fullBleedRule"> <!--Full Bleed Rule  -->
+                <hr>
             </div>
         <!--  -->
     </body>

@@ -5,7 +5,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>05-shippingMethod</title>
+        <title>07-followUp</title>
         <meta name="index" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
@@ -22,11 +22,11 @@
             <div class="navBar">
                 <!-- Home Button -->
                 <div class="homeButton">
-                    <img id="homeBacker"src ="../images/navBar_homeBacker.svg">
+                    <img id="homeBacker" style="opacity: 0%" src="../images/navBar_homeBacker.svg">
                     <div class="homeButtonType">
-                        <p class="navType">Here > There > Here</p>
+                        <a href="index.html"><p class="navTypeInv"><mark id="homeButtonMark">&nbsp; Here > There > Here&nbsp;</mark></p></a>
                     </div>                    
-                </div>           
+                </div>          
                 <div class="stepsNav">
                     <img id="stepsBacker"src ="../images/navBar_stepsBacker.svg">
                     <div class="stepsButtonType">
@@ -59,7 +59,7 @@
                 <!-- Left -->
                 <div class="sideNavL">
                     <div class="sideNavLButton">
-                        <span class="sideNavCircle1"></span>
+                        <a href="06-artShippers.html"><span class="sideNavCircle1"></span></a>
                         <p class="navType" id="leftNavType"><a href="06-artShippers.html">←</a></p>
                     </div> 
                 </div>
@@ -68,7 +68,7 @@
                 <!-- Right -->
                 <div class="sideNavR">
                     <div class="sideNavRButton">
-                        <span class="sideNavCircle2"></span>
+                        <a href="08-itGotThere.html"><span class="sideNavCircle2"></span></a>
                         <p class="navType" id="rightNavType"><a href="08-itGotThere.html">→</a></p>
                     </div>
                 </div>
@@ -95,7 +95,7 @@
             <!-- Main Title -->
             <div class="mainTitle" id="step4Title">
                 <!-- Art  -->
-                <h1>
+                <h1 id="h1reg">
                     <span class="negKern6">T</span><span class="negKern10">he</span>
                 <br> 
                 <!-- Shippers  -->
@@ -115,7 +115,7 @@
 
             <div class ="firstBodyContent"> <!-- Body Text Section | How to Package... | Title -->  
                 <div class id="bodyTextSection">
-                    <br><h2>| Step 3-1 |<br>| Just Write an Email |</h2><br>
+                    <br><h2><mark id="h2Test">| Step 7-1 |</mark><br><mark id="h2Test">| More Emails — What Fun |</mark></h2><br>
                 </div>
             </div>
 
@@ -126,31 +126,90 @@
             <div class ="bodyContent">
                 <br>
                 <!-- body copy -->
-                <p class="bP"> 
-                    Subject: Inquiry Regarding Artwork Shipping from Toronto to Montreal<br><br>                       Hello [Gallery Name] Team,<br><br>
-                    I’m looking to follow up on shipping my artwork for (INSERT THE NAME OF YOUR SHOW/FAIR/CLIENT), and I just wanted to check on some details.<br>
-                </p>
-                    <ol class="bP">
-                    <li>What are the hours in which you would be able to receive the artwork, and where will anyone around be able to help receive the shipment?</li><br>
-                    <li>Do you have a loading dock?</li><br>
-                    <li>Do you have any preferred shippers you like to work with?</li><br>
-                    <li>Do you generally cover insuring the artwork during transport, or is that the artist's responsibility?</li><br>
-                    <li>Is there a timeline you would like me to follow? How far in advance do you need the artwork to be able to install it comfortably?</li><br>
-                    <li>Is there a contact person I should deal with directly?</li><br>
-                </ol>
-                
                 <p class="bP">
+                    Now's the time. You're almost ready to start packing up your stuff, but wait! You need to check som ethings first! If there is going to be an issue with your work getting recieved, or if the reciever has som ekind of special requirements, you need to know that first. Well, there is a solution for that. Email. I know, it is boring sending emails, but you are better off knowing this now instead of having everything packed up like crazy expecting you'd have to fed ex everything, and then have the gallery call and ask when they should send the Art Handlers over to pack and transport your work. Yup, 5 minutes of typing is probably better than a whole day and $100 worth of supplies being wasted.
+                </p>
+                <br><hr><br><h2 id ="h2TableHeader">| You Can Just Copy and Paste This |</h2><br>
+
+                </h2><br><hr><br>
+
+                <div class="bodyContentEmail">
+                    <p class="bPEmail"> 
+                        Subject: Inquiry Regarding Artwork Shipping from [ORIGIN] to [DESTINATION]<br><br>Hello [GALLERY NAME] Team,<br><br>
+                        I’m looking to follow up on shipping my artwork for [NAME OF YOUR SHOW/FAIR/CLIENT], and I just wanted to check on some details.<br>
+                    </p>
+    
+                    <ol class="bPEmail">
+                        <li>What are the hours in which you would be able to receive the artwork, and where will anyone around be able to help receive the shipment?</li><br>
+                        <li>Do you have a loading dock?</li><br>
+                        <li>Do you have any preferred shippers you like to work with?</li><br>
+                        <li>Do you generally cover insuring the artwork during transport, or is that the artist's responsibility?</li><br>
+                        <li>Is there a timeline you would like me to follow? How far in advance do you need the artwork to be able to install it comfortably?</li><br>
+                        <li>Is there a contact person I should deal with directly?</li><br>
+                    </ol>
+                    
+                    <p class="bPEmail">
                         Thanks for your assistance with this,<br><br>
                         [Your Name]<br>
                         [Your Address]<br>
                         [Your Phone Number]<br>
-                        [Your Email Address]<br>
+                    </p>
+                </div>
+            
+                <p class="bP">
+                    See, not so bad right?<br><br><br><br><br><br>
                 </p>
-
-            <div class="fullBleedRule">
-                <hr>
             </div>
 
         <!--  -->
+
+    <!-- Footer -->
+        <div class="fullBleedRule"> <!--Full Bleed Rule  -->
+            <hr>
+        </div>
+        
+        <div class="footerTableContainer">
+            <table class="footer" style="width:100%"> <!-- "A Handy Table" -->
+                <!-- Headers -->
+                <tr class="footerTableHeader">
+                    <th style="width:15%">Steps</th>
+                    <th style="width:35%">Tasks</th>
+                    <th style="width:50%">Resources</th>
+                </tr>
+                <tr class="footerTableHeader">
+                    <td> 
+                        <a href="01-firstSteps.html" id="footerLink">Step 1</a><br>
+                        <a href="02-gettingPacked.html" id="footerLink">Step 2</a><br>
+                        <a href="03-makingContact.html" id="footerLink">Step 3</a><br>
+                        <a href="04-packingArt.html" id="footerLink">Step 4</a><br>
+                        <a href="05-shippingMethod.html" id="footerLink">Step 5</a><br>
+                        <a href="06-artShippers.html" id="footerLink">Step 6</a><br>
+                        <a href="07-folowUp.html" id="footerLink">Step 7</a><br>
+                        <a href="08-itGotThere.html" id="footerLink">Step 8</a><br>
+                        <a href="09-youreDone.html" id="footerLink">Step 9</a><br>
+                    </td>
+                    <td>
+                        <a href="01-firstSteps.html#step1-1" id="footerLink">1-1 | How to Package Your Work</a><br>
+                        <a href="01-firstSteps.html#step1-2" id="footerLink">1-2 | The Plan</a><br>
+                        <a href="02-gettingPacked.html#step2-1" id="footerLink">2-1 | How to Package Your work</a><br>
+                        <a href="02-gettingPacked.html#step2-2" id="footerLink">2-2 | A Handy Table</a><br>
+                        <a href="02-gettingPacked.html#step2-3" id="footerLink">2-3 | Getting your Supplies Ready</a><br>
+                        <a href="03-makingContact.html#step3-1" id="footerLink">3-1 | Just Write an Email</a><br>
+                    </td>
+                    <td>
+                        <a href="https://www.canada.ca/en/conservation-institute/services/conservation-preservation-publications/canadian-conservation-institute-notes/wrapping-painting.html" id="footerLink" target="_blank">How the Government Thinks You Should Package Your Art</a><br>
+                        <a href="03-makingContact.html#step3-1" id="footerLink">An Example of How to Not Make Galleries Hate You<br></a>
+                        <a href="https://books.google.ws/books?id=shantZ75PVgC&printsec=frontcover#v=onepage&q&f=false" id="footerLink" target="_blank">The Bible<br></a>
+                        <a href="https://refuseuline.com/" id="footerLink" target="_blank">Why Uline is Evil<br></a>
+                        A List of Supplies<br>
+                        A Handy Table<br>
+                        
+                    </td>
+                </tr>
+            </table>
+            <br><br><br>
+        </div>
+    <!--  -->
+
     </body>
 </html> 
