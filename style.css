@@ -867,6 +867,11 @@ body {
     color: #ffffff;
 }
 
+#tableAfter{
+    position: relative;
+    margin-top: -40px;
+}
+
 #homeButtonMark{
     position: relative;
     left: -10px;
