@@ -1042,20 +1042,20 @@ body {
     max-width: 100%;
 }
 .footerTableContainer{
-    margin-top: 80px;
+    margin-top: 10px;
     margin-left: 10vw;
     margin-right: 5vw;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
     padding-left: 20px;
     padding-right: 20px;
     max-width: 80%;
 }
 
 .footer{
-    margin-top: 80px;
+    margin-top: 40px;
     margin-left: 0vw;
     margin-right: 5vw;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
     padding-left: 20px;
     padding-right: 20px;
     max-width: 100%;
