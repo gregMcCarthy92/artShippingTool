@@ -11,7 +11,7 @@ src: url('./artShippingTool/fonts/SuisseIntl-Regular-WebXL.woff') format('woff')
 
 @font-face{ /* Suisse Mono | Reg S | Captions, Table & Nav */
     font-family:suisseIntl;
-    src: url(../fonts/SuisseIntl-Regular-WebM.woff);
+    src: url('./artShippingTool/fonts/SuisseIntl-Regular-WebM.woff') format('woff');
     font-weight: 100;
 }
 
