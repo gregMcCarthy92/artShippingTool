@@ -18,25 +18,25 @@ src: url('./artShippingTool/fonts/SuisseIntl-Regular-WebXL.woff') format('woff')
 
 @font-face{ /* Suisse Mono | Reg | Body Headers */
     font-family:suisseMono;
-    src: url(../fonts/SuisseIntlMono-Regular-WebS.woff);
+    src: url('./artShippingTool/fonts/SuisseIntlMono-Regular-WebS.woff') format('woff');
     font-weight:100;
 }
 
 @font-face{ /* Suisse Mono | Bold | Body Headers */
     font-family:suisseMonoSemi;
-    src: url(../fonts/SuisseIntlCond-Regular-WebS.woff);
+    src: url('./artShippingTool/fonts/SuisseIntlCond-Regular-WebS.woff') format('woff');
     font-weight:500;
 }
 
 @font-face{ /* Suisse Mono | Bold | Body Headers */
     font-family:suisseMono;
-    src: url(../fonts/SuisseIntlMono-Bold-WebS.woff);
+    src: url('./artShippingTool/fonts/SuisseIntlMono-Bold-WebS.woff') format('woff');
     font-weight:300;
 }
 
 @font-face{ /* Suisse Mono | Thin |Body Copy */
     font-family:suisseMono;
-    src: url(../fonts/SuisseIntlMono-thin-WebS.woff);
+    src: url('./artShippingTool/fonts/SuisseIntlMono-thin-WebS.woff') format('woff');
     font-weight:500;
 }
 
