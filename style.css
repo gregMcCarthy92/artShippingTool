@@ -5,7 +5,7 @@
 
 @font-face{ /* Suisse Mono | Reg XL | Main Titles, H1 */
     font-family:suisseIntl;
-    src: url(../fonts/SuisseIntl-Regular-WebXL.woff);
+    src: url(fonts/SuisseIntl-Regular-WebXL.woff);
     font-weight: Bolder;
 }
 
