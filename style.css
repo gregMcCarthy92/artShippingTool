@@ -582,7 +582,7 @@ body {
 
 .homeButton {       /* Nav | Top | Home Button | Container */
     position: relative;
-    top: -2px;
+    top: 1px;
     padding-left: 30px;
 }
 
