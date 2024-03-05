@@ -589,7 +589,7 @@ body {
 .homeButtonType{    /* Nav | Top | Home Button | Type | Container */
     position: relative;
     left:-4px;
-    Top:-10px;
+    Top: -15px;
     width: 206px;;
 
 }
